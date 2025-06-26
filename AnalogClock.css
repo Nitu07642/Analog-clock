@@ -1,0 +1,103 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;   
+}
+#clock{
+    position: relative;
+    height: 45vw;
+    width: 45vw;
+    border: 8px,solid,black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    
+    
+ }
+.center{
+     position:absolute;
+    height: 12px;
+    width: 12px;
+    background-color: black;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.hand{
+    position: absolute;
+    bottom: 50%; 
+    left: 50%; 
+    transform-origin: bottom;
+     transform: rotate(90deg);
+}
+#hour{
+    height: 10vw;
+    width: 10px;
+    background-color: black;
+}
+#mint{
+   height: 15vw;
+    width: 8px;
+    background-color: gray;
+}
+#second{
+   height: 20vw;
+    width: 5px;
+    background-color: red;
+}
+.number{
+    position: absolute;
+   color:black;
+   font-size: 30px;
+   font-weight:bolder;
+   transform:translate(-50%,-50%);
+}
+#togglemode{
+    height: 40px;
+    width: 50px;
+    border-radius: 8px;
+    border: solid black 3px;
+    color: white;
+    background-color: rgb(11, 49, 49);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+body.night{
+    background-color: black; 
+}
+body.night #togglemode{
+    background-color:white;
+    border: none;
+    color:black;
+}
+body.night #clock{
+    background-color: #333;
+   border: 8px,solid,rgb(240, 235, 235);
+    
+}
+
+body.night .hand{
+    background-color: white;
+}
+body.night .number{
+    color: white;
+}
+body.night #hour{
+    height: 10vw;
+    width: 10px;
+    background-color: white;
+}
+body.night #mint{
+    background-color: gray;
+
+}
+
