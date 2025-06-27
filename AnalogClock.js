@@ -40,17 +40,15 @@ const clock=document.getElementById('clock');
          
          const angle= (i*30-90)*(Math.PI/180);// convert degree to radian
               // distance from center
-              const centerX=350;
-              const centerY=350;
-         const radius=300;   // adjust a/c to clock size
+         const radius=20;   // adjust a/c to clock size
          // center x
-         const x=centerX+radius*Math.cos(angle);
+         const x=23+radius*Math.cos(angle);
          // center y
-          const y=centerY+radius*Math.sin(angle);
+          const y=23+radius*Math.sin(angle);
      
          // apply style on number
-          number.style.left=`${x}px`; 
-          number.style.top=`${y}px`;
+          number.style.left=`${x}vw`; 
+          number.style.top=`${y}vw`;
      
           clock.appendChild(number);
           
